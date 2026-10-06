@@ -13,7 +13,7 @@ const attribute = `(?:\\s+${attr_name}(?:\\s*=\\s*${attr_value})?)`
 const open_tag = `<[A-Za-z][A-Za-z0-9\\-]*${attribute}*\\s*\\/?>`
 
 const close_tag = '<\\/[A-Za-z][A-Za-z0-9\\-]*\\s*>'
-const comment = '<!---?>|<!--(?:[^-]|-[^-]|--[^>])*-->'
+const comment = '<!---?>|<!--[\\s\\S]*?-->'
 const processing = '<[?][\\s\\S]*?[?]>'
 const declaration = '<![A-Za-z][^>]*>'
 const cdata = '<!\\[CDATA\\[[\\s\\S]*?\\]\\]>'

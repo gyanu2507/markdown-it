@@ -923,3 +923,17 @@ No stripping when a code span is all spaces (CommonMark 0.31.2 6.1).
 .
 <p><code>   </code></p>
 .
+
+Inline HTML comment text may end with `-` (CommonMark 0.31.2 6.6), it only
+must not contain `-->`.
+.
+foo <!-- bar ---> baz
+
+foo <!--- bar ---> baz
+
+foo <!-----> baz
+.
+<p>foo <!-- bar ---> baz</p>
+<p>foo <!--- bar ---> baz</p>
+<p>foo <!-----> baz</p>
+.
