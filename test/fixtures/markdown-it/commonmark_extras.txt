@@ -932,8 +932,11 @@ foo <!-- bar ---> baz
 foo <!--- bar ---> baz
 
 foo <!-----> baz
+
+foo <!-- a ---> b -->
 .
 <p>foo <!-- bar ---> baz</p>
 <p>foo <!--- bar ---> baz</p>
 <p>foo <!-----> baz</p>
+<p>foo <!-- a ---> b --&gt;</p>
 .
